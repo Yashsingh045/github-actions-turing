@@ -1,0 +1,10 @@
+name: testing function from star.js
+on: [push]
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check code
+              uses: actions/checkout@v2
+            - name: Run star.js
+              run: node star.js
